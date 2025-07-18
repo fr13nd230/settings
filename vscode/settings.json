@@ -1,0 +1,48 @@
+{
+  "workbench.colorTheme": "Night Owl",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "explorer.confirmDelete": false,
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-linux": "/home/fr13nd230/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.kubectl-path-linux": "/home/fr13nd230/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path-linux": "/home/fr13nd230/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+  "[typescript]": {
+    "prettier.singleQuote": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "prettier.singleQuote": true,
+  "npm-intellisense.scanDevDependencies": true,
+  "npm-intellisense.showBuildInLibs": true,
+  "sql-formatter.dialect": "pl/sql",
+  "go.toolsManagement.autoUpdate": true,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 16,
+  "breadcrumbs.enabled": false,
+  "editor.formatOnSave": false,
+  "editor.suggest.insertMode": "replace",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "editor.linkedEditing": true,
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "window.zoomLevel": 0.5,
+  "launch": {},
+  "[json]": {},
+  "update.showReleaseNotes": false,
+  "zenMode.hideLineNumbers": false,
+  "editor.lineNumbers": "on",
+  "workbench.activityBar.location": "hidden",
+  "makefile.configureOnOpen": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "files.autoSave": "afterDelay",
+  "docker.extension.enableComposeLanguageServer": false,
+  "workbench.settings.applyToAllProfiles": [
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
