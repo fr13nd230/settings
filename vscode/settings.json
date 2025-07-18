@@ -39,6 +39,7 @@
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "files.autoSave": "afterDelay",
+  "editor.cursorStyle": "block",
   "docker.extension.enableComposeLanguageServer": false,
   "workbench.settings.applyToAllProfiles": [
   ],
