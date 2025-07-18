@@ -1,0 +1,72 @@
+{
+    "features": {
+        "edit_prediction_provider": "none"
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "Night Owl Dark"
+    },
+    "notification_panel": {
+        "dock": "right"
+    },
+    "chat_panel": {
+        "dock": "right"
+    },
+    "outline_panel": {
+        "dock": "right"
+    },
+    "project_panel": {
+        "dock": "left"
+    },
+    "vim_mode": true,
+    "base_keymap": "VSCode",
+
+    // Language-specific formatting
+    "languages": {
+        "Go": {
+            "formatter": {
+                "external": {
+                    "command": "gofmt",
+                    "arguments": []
+                }
+            },
+            "format_on_save": "on"
+        },
+        "Rust": {
+            "formatter": {
+                "external": {
+                    "command": "rustfmt",
+                    "arguments": ["--emit=stdout"]
+                }
+            },
+            "format_on_save": "on"
+        }
+    },
+
+    // General editor settings
+    "editor": {
+        "format_on_save": "on",
+        "vim": {
+            "use_system_clipboard": "always",
+            "use_multiline_find": true,
+            "use_smartcase_find": true
+        }
+    },
+    "experimental.theme_overrides": {
+        "editor.document_highlight.bracket_background": "#ffffff00"
+    },
+    "tab_size": 4,
+    "format_on_save": "on",
+    "relative_line_numbers": false,
+    "autosave": { "after_delay": { "milliseconds": 1000 } },
+    "restore_on_startup": "last_session",
+    "ui_font_size": 16,
+    "buffer_font_size": 16,
+    "ui_font_family": "JetBrains Mono",
+    "buffer_font_family": "JetBrains Mono"
+}
