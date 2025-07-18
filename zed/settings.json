@@ -60,6 +60,7 @@
     "experimental.theme_overrides": {
         "editor.document_highlight.bracket_background": "#ffffff00"
     },
+    "cursor_shape": "block",
     "tab_size": 4,
     "format_on_save": "on",
     "relative_line_numbers": false,
