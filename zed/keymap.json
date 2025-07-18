@@ -1,0 +1,59 @@
+[
+    // Essential shortcuts - highest priority
+    {
+        "bindings": {
+            "ctrl-b": "workspace::ToggleLeftDock",
+            "ctrl-f": "editor::Format",
+            "ctrl-w": "pane::CloseActiveItem"
+        }
+    },
+
+    // Vim mode specific overrides
+    {
+        "context": "Editor && vim_mode == normal",
+        "bindings": {
+            "ctrl-w": "pane::CloseActiveItem",
+            "ctrl-f": "editor::Format",
+            "ctrl-d": "editor::SelectNext",
+            "ctrl-shift-l": "editor::SelectAllMatches"
+        }
+    },
+
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            "ctrl-w": "pane::CloseActiveItem",
+            "ctrl-f": "editor::Format",
+            "ctrl-d": "editor::SelectNext",
+            "ctrl-c": "editor::Copy",
+            "ctrl-v": "editor::Paste",
+            "ctrl-x": "editor::Cut"
+        }
+    },
+
+    {
+        "context": "Editor && vim_mode == visual",
+        "bindings": {
+            "ctrl-w": "pane::CloseActiveItem",
+            "ctrl-f": "editor::Format",
+            "ctrl-c": "editor::Copy",
+            "ctrl-x": "editor::Cut",
+            "backspace": "editor::Delete",
+            "delete": "editor::Delete"
+        }
+    },
+
+    // Multi-cursor and selection shortcuts
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-d": "editor::SelectNext",
+            "ctrl-k ctrl-d": "editor::SelectPrevious",
+            "ctrl-shift-l": "editor::SelectAllMatches",
+            "ctrl-right": "editor::MoveToNextWordEnd",
+            "ctrl-left": "editor::MoveToPreviousWordStart",
+            "ctrl-shift-right": "editor::SelectToNextWordEnd",
+            "ctrl-shift-left": "editor::SelectToPreviousWordStart"
+        }
+    }
+]
