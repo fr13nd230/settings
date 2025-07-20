@@ -66,9 +66,6 @@
   "editor.snippetSuggestions": "top",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "explorer.confirmDragAndDrop": false,
-  "terminal.integrated.commandsToSkipShell": [
-    "language-julia.interrupt"
-  ],
   "extensions.ignoreRecommendations": false,
   "vim.leader": "<space>",
   "vim.easymotion": true,
@@ -86,12 +83,5 @@
   "vim.statusBarColors.replace": [
     "#D08770",
     "#434C5E"
-  ],
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#B48EAD",
-    "statusBar.noFolderBackground": "#B48EAD",
-    "statusBar.debuggingBackground": "#B48EAD",
-    "statusBar.foreground": "#434C5E",
-    "statusBar.debuggingForeground": "#434C5E"
-  }
+  ]
 }
