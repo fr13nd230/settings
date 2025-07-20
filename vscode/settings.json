@@ -16,8 +16,6 @@
   "javascript.preferences.quoteStyle": "single",
   "prettier.singleQuote": true,
   "npm-intellisense.scanDevDependencies": true,
-  "npm-intellisense.showBuildInLibs": true,
-  "sql-formatter.dialect": "pl/sql",
   "go.toolsManagement.autoUpdate": true,
   "editor.minimap.enabled": false,
   "editor.fontSize": 16,
@@ -32,7 +30,7 @@
   "[json]": {},
   "update.showReleaseNotes": false,
   "zenMode.hideLineNumbers": false,
-  "editor.lineNumbers": "on",
+  "editor.lineNumbers": "relative",
   "workbench.activityBar.location": "hidden",
   "makefile.configureOnOpen": false,
   "[markdown]": {
@@ -41,9 +39,59 @@
   "files.autoSave": "afterDelay",
   "editor.cursorStyle": "block",
   "docker.extension.enableComposeLanguageServer": false,
-  "workbench.settings.applyToAllProfiles": [
-  ],
+  "workbench.settings.applyToAllProfiles": [],
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-b>": false,
+    "<C-f>": false,
+    "<C-w>": false,
+    "<C-d>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-x>": false,
+    "<C-a>": false,
+    "<C-z>": false,
+    "<C-y>": false
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "language-julia.interrupt"
+  ],
+  "extensions.ignoreRecommendations": false,
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.showMarksInGutter": true,
+  "vim.foldfix": true,
+  "vim.surround": true,
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+  "vim.statusBarColors.insert": ["#BF616A", "#434C5E"], 
+  "vim.statusBarColors.visual": ["#B48EAD", "#434C5E"],
+  "vim.statusBarColors.visualline": ["#B48EAD", "#434C5E"],
+  "vim.statusBarColors.visualblock": ["#A3BE8C", "#434C5E"],
+  "vim.statusBarColors.replace": [
+    "#D08770",
+    "#434C5E"
+  ],
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#B48EAD",
+    "statusBar.noFolderBackground": "#B48EAD",
+    "statusBar.debuggingBackground": "#B48EAD",
+    "statusBar.foreground": "#434C5E",
+    "statusBar.debuggingForeground": "#434C5E"
   }
 }
