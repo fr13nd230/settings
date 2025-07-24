@@ -1,62 +1,62 @@
 [
   { 
-    "key": "space+left",      
+    "key": "space left",      
     "command": "workbench.action.focusLeftGroup", 
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   { 
-    "key": "space+right",
+    "key": "space right",
     "command": "workbench.action.focusRightGroup",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   { 
-    "key": "space+up",
-    "command": "workbench.action.openNextEditorInGroup",
+    "key": "space up",
+    "command": "workbench.action.nextEditorInGroup",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   { 
-    "key": "space+down",
-    "command": "workbench.action.openPreviousEditorInGroup",
+    "key": "space down",
+    "command": "workbench.action.previousEditorInGroup",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   { 
-    "key": "space+left",      
+    "key": "space left",      
     "command": "workbench.action.focusLeftGroup", 
     "when": "editorTextFocus && vim.mode == 'Visual'"
   },
   { 
-    "key": "space+right",
+    "key": "space right",
     "command": "workbench.action.focusRightGroup",
     "when": "editorTextFocus && vim.mode == 'Visual'"
   },
   { 
-    "key": "space+up",
-    "command": "workbench.action.openNextEditorInGroup",
+    "key": "space up",
+    "command": "workbench.action.nextEditorInGroup",
     "when": "editorTextFocus && vim.mode == 'Visual'"
   },
   { 
-    "key": "space+down",
-    "command": "workbench.action.openPreviousEditorInGroup",
+    "key": "space down",
+    "command": "workbench.action.previousEditorInGroup",
     "when": "editorTextFocus && vim.mode == 'Visual'"
   },
   { 
-    "key": "space+left",      
+    "key": "space left",      
     "command": "workbench.action.focusLeftGroup", 
     "when": "editorTextFocus && vim.mode == 'Insert'"
   },
   { 
-    "key": "space+right",
+    "key": "space right",
     "command": "workbench.action.focusRightGroup",
     "when": "editorTextFocus && vim.mode == 'Insert'"
   },
   { 
-    "key": "space+up",
-    "command": "workbench.action.openNextEditorInGroup",
+    "key": "space up",
+    "command": "workbench.action.nextEditorInGroup",
     "when": "editorTextFocus && vim.mode == 'Insert'"
   },
   { 
-    "key": "space+down",
-    "command": "workbench.action.openPreviousEditorInGroup",
+    "key": "space down",
+    "command": "workbench.action.previousEditorInGroup",
     "when": "editorTextFocus && vim.mode == 'Insert'"
   }
 ]
