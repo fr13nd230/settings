@@ -1,50 +1,79 @@
 {
+  "editor.fontSize": 16,
+  "editor.formatOnSave": false,
+  "editor.minimap.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.lineNumbers": "relative",
+  "editor.cursorStyle": "block",
+  "editor.suggest.insertMode": "replace",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "window.zoomLevel": 0.5,
   "workbench.colorTheme": "Night Owl",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
+  "workbench.activityBar.location": "hidden",
+  "workbench.settings.applyToAllProfiles": [],
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": false,
+  "docker.extension.enableComposeLanguageServer": false,
   "vs-kubernetes": {
     "vscode-kubernetes.helm-path-linux": "/home/fr13nd230/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
     "vscode-kubernetes.kubectl-path-linux": "/home/fr13nd230/.local/state/vs-kubernetes/tools/kubectl/kubectl",
     "vscode-kubernetes.minikube-path-linux": "/home/fr13nd230/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
   },
+  "typescript.preferences.quoteStyle": "single",
   "[typescript]": {
+    "editor.formatOnSave": true,
     "prettier.singleQuote": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.preferences.quoteStyle": "single",
   "javascript.preferences.quoteStyle": "single",
-  "prettier.singleQuote": true,
-  "npm-intellisense.scanDevDependencies": true,
-  "go.toolsManagement.autoUpdate": true,
-  "editor.minimap.enabled": false,
-  "editor.fontSize": 16,
-  "breadcrumbs.enabled": false,
-  "editor.formatOnSave": false,
-  "editor.suggest.insertMode": "replace",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "editor.linkedEditing": true,
   "javascript.updateImportsOnFileMove.enabled": "prompt",
-  "window.zoomLevel": 0.5,
-  "launch": {},
-  "[json]": {},
-  "update.showReleaseNotes": false,
-  "zenMode.hideLineNumbers": false,
-  "editor.lineNumbers": "relative",
-  "workbench.activityBar.location": "hidden",
-  "makefile.configureOnOpen": false,
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "prettier.singleQuote": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.autoSave": "afterDelay",
-  "editor.cursorStyle": "block",
-  "docker.extension.enableComposeLanguageServer": false,
-  "workbench.settings.applyToAllProfiles": [],
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[json]": {},
+  "launch": {},
+  "prettier.singleQuote": true,
+  "makefile.configureOnOpen": false,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "npm-intellisense.scanDevDependencies": true,
+  "go.toolsManagement.autoUpdate": true,
+  "breadcrumbs.enabled": false,
+  "update.showReleaseNotes": false,
+  "files.autoSave": "afterDelay",
+  "vim.leader": "<space>",
   "vim.hlsearch": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.showMarksInGutter": true,
+  "vim.foldfix": true,
+  "vim.surround": true,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "after": [" "]
+    }
+  ],
   "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
     {
       "before": ["j", "k"],
       "after": ["<Esc>"]
@@ -62,20 +91,5 @@
     "<C-z>": false,
     "<C-y>": false,
     "<C-p>": false
-  },
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.snippetSuggestions": "top",
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "explorer.confirmDragAndDrop": false,
-  "extensions.ignoreRecommendations": false,
-  "vim.leader": "<space>",
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.showMarksInGutter": true,
-  "vim.foldfix": true,
-  "vim.surround": true,
-  "settingsSync.ignoredSettings": [
-
-  ]
+  }
 }
