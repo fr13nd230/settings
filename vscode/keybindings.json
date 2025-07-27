@@ -1,5 +1,35 @@
 [
   { 
+    "key": "space w",      
+    "command": "workbench.action.closeActiveEditor", 
+    "when": "vim.mode == 'Normal' || vim.mode == 'Visual'"
+  },
+  { 
+    "key": "space a w",      
+    "command": "workbench.action.closeAllEditors", 
+    "when": "vim.mode == 'Normal' || vim.mode == 'Visual'"
+  },
+  { 
+    "key": "space p",      
+    "command": "workbench.action.quickOpen", 
+    "when": "vim.mode == 'Normal' || vim.mode == 'Visual'"
+  }, 
+  { 
+    "key": "space b",      
+    "command": "workbench.action.toggleSidebarVisibility", 
+    "when": "vim.mode == 'Normal' || vim.mode == 'Visual'"
+  },  
+  { 
+    "key": "space s",      
+    "command": "workbench.action.files.save", 
+    "when": "vim.mode == 'Normal' || vim.mode == 'Visual'"
+  },
+  {
+    "key": "space f",
+    "command": "editor.action.formatDocument",
+    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorLangId == javascript || editorLangId == typescript)"
+  },
+  { 
     "key": "space left",      
     "command": "workbench.action.focusLeftGroup", 
     "when": "editorTextFocus && vim.mode == 'Normal'"
@@ -38,25 +68,10 @@
     "key": "space down",
     "command": "workbench.action.previousEditorInGroup",
     "when": "editorTextFocus && vim.mode == 'Visual'"
-  },
-  { 
-    "key": "space left",      
-    "command": "workbench.action.focusLeftGroup", 
-    "when": "editorTextFocus && vim.mode == 'Insert'"
-  },
-  { 
-    "key": "space right",
-    "command": "workbench.action.focusRightGroup",
-    "when": "editorTextFocus && vim.mode == 'Insert'"
-  },
-  { 
-    "key": "space up",
-    "command": "workbench.action.nextEditorInGroup",
-    "when": "editorTextFocus && vim.mode == 'Insert'"
-  },
-  { 
-    "key": "space down",
-    "command": "workbench.action.previousEditorInGroup",
-    "when": "editorTextFocus && vim.mode == 'Insert'"
+  },  
+  {
+    "key": "ctrl+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorLangId == javascript || editorLangId == typescript"
   }
 ]
