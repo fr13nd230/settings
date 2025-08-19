@@ -54,7 +54,9 @@
         "vim": {
             "use_system_clipboard": "always",
             "use_multiline_find": true,
-            "use_smartcase_find": true
+            "use_smartcase_find": true,
+            "custom_digraphs": {},
+            "leader": "  "
         }
     },
     "experimental.theme_overrides": {
@@ -63,7 +65,7 @@
     "cursor_shape": "block",
     "tab_size": 4,
     "format_on_save": "on",
-    "relative_line_numbers": false,
+    "relative_line_numbers": true,
     "autosave": { "after_delay": { "milliseconds": 1000 } },
     "restore_on_startup": "last_session",
     "ui_font_size": 16,
