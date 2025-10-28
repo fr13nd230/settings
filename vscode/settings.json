@@ -25,13 +25,14 @@
     "vscode-kubernetes.minikube-path-linux": "/home/fr13nd230/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
   },
   "typescript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "always", 
   "[typescript]": {
     "editor.formatOnSave": true,
     "prettier.singleQuote": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "javascript.preferences.quoteStyle": "single",
-  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "[javascript]": {
     "editor.formatOnSave": true,
     "prettier.singleQuote": true,
@@ -61,6 +62,22 @@
   "vim.showMarksInGutter": true,
   "vim.foldfix": true,
   "vim.surround": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["o"],
+      "after": ["o", "<Esc>"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "after": ["o", "<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "n"],
+      "after": ["o", "<Esc>"]
+    }
+  ],
   "vim.insertModeKeyBindingsNonRecursive": [
     {
       "before": ["<space>"],
@@ -91,5 +108,19 @@
     "<C-z>": false,
     "<C-y>": false,
     "<C-p>": false
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   }
 }
