@@ -1,6 +1,6 @@
 [
   { 
-    "key": "space \\",      
+    "key": "space v",      
     "command": "workbench.action.splitEditor", 
     "when": "vim.mode == 'Normal' || vim.mode == 'Visual'"
   },
