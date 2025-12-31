@@ -94,11 +94,6 @@
       "silent": true
     },
     {
-      "before": ["<leader>", "b"],
-      "commands": ["workbench.action.toggleSidebarVisibility"],
-      "silent": true
-    },
-    {
       "before": ["<leader>", "w"],
       "commands": ["workbench.action.files.save"],
       "silent": true
@@ -131,6 +126,16 @@
     {
       "before": ["<leader>", "down"],
       "commands": ["workbench.action.previousEditorInGroup"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "."],
+      "commands": ["editor.action.quickFix"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "/"], 
+      "commands": ["editor.action.commentLine"],
       "silent": true
     }
   ],
@@ -187,11 +192,6 @@
       "silent": true
     },
     {
-      "before": ["<leader>", "b"],
-      "commands": ["workbench.action.toggleSidebarVisibility"],
-      "silent": true
-    },
-    {
       "before": ["<leader>", "w"],
       "commands": ["workbench.action.files.save"],
       "silent": true
@@ -225,13 +225,23 @@
       "before": ["<leader>", "down"],
       "commands": ["workbench.action.previousEditorInGroup"],
       "silent": true
+    },
+    {
+      "before": ["<leader>", "."],
+      "commands": ["editor.action.quickFix"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "/"], 
+      "commands": ["editor.action.commentLine"],
+      "silent": true
     }
   ],
   "vim.handleKeys": {
     "<C-b>": false,
     "<C-w>": false,
     "<C-d>": false,
-    "<C-p>": false
+    "<C-p>": false,
   },
   "[dockercompose]": {
     "editor.insertSpaces": true,
