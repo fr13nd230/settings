@@ -10,7 +10,7 @@
   "editor.snippetSuggestions": "top",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "window.zoomLevel": 0.5,
-  "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "Tokyo Night",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.activityBar.location": "hidden",
@@ -18,14 +18,8 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": false,
-  "docker.extension.enableComposeLanguageServer": false,
-  "vs-kubernetes": {
-    "vscode-kubernetes.helm-path-linux": "/home/fr13nd230/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
-    "vscode-kubernetes.kubectl-path-linux": "/home/fr13nd230/.local/state/vs-kubernetes/tools/kubectl/kubectl",
-    "vscode-kubernetes.minikube-path-linux": "/home/fr13nd230/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
-  },
   "typescript.preferences.quoteStyle": "single",
-  "typescript.updateImportsOnFileMove.enabled": "always", 
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "[typescript]": {
     "editor.formatOnSave": true,
     "prettier.singleQuote": true,
@@ -42,7 +36,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   "[json]": {},
   "launch": {},
@@ -64,54 +58,184 @@
   "vim.surround": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
+      "before": ["<leader>"]
+    },
+    {
       "before": ["o"],
       "after": ["o", "<Esc>"]
     },
     {
-      "before": ["<leader>", "n"],
-      "after": ["o", "<Esc>"]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
+      "before": ["O"],
+      "after": ["O", "<Esc>"]
+    },
     {
-      "before": ["<leader>", "n"],
-      "after": ["o", "<Esc>"]
+      "before": ["<leader>", "v"],
+      "commands": ["workbench.action.splitEditor"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "a", "c"],
+      "commands": ["workbench.action.closeAllEditors"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.formatDocument"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"],
+      "silent": true
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"],
+      "silent": true
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.goToImplementation"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "left"],
+      "commands": ["workbench.action.focusLeftGroup"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "right"],
+      "commands": ["workbench.action.focusRightGroup"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "up"],
+      "commands": ["workbench.action.nextEditorInGroup"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "down"],
+      "commands": ["workbench.action.previousEditorInGroup"],
+      "silent": true
     }
   ],
   "vim.insertModeKeyBindingsNonRecursive": [
     {
+      "before": ["<leader>"],
+      "after": [" "]
+    },
+    {
       "before": ["<space>"],
       "after": [" "]
-    }
-  ],
-  "vim.insertModeKeyBindings": [
+    },
     {
       "before": ["j", "k"],
       "after": ["<Esc>"]
     }
   ],
-  "vim.visualModeKeyBindings": [
+  "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["j", "k"],
       "after": ["<Esc>"]
+    },
+    {
+      "before": ["o"],
+      "after": ["o", "<Esc>"]
+    },
+    {
+      "before": ["O"],
+      "after": ["O", "<Esc>"]
+    },
+    {
+      "before": ["<leader>", "v"],
+      "commands": ["workbench.action.splitEditor"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "a", "c"],
+      "commands": ["workbench.action.closeAllEditors"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.formatDocument"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"],
+      "silent": true
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"],
+      "silent": true
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.goToImplementation"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "left"],
+      "commands": ["workbench.action.focusLeftGroup"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "right"],
+      "commands": ["workbench.action.focusRightGroup"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "up"],
+      "commands": ["workbench.action.nextEditorInGroup"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "down"],
+      "commands": ["workbench.action.previousEditorInGroup"],
+      "silent": true
     }
   ],
   "vim.handleKeys": {
     "<C-b>": false,
-    "<C-f>": false,
     "<C-w>": false,
     "<C-d>": false,
-    "<C-c>": false,
-    "<C-v>": false,
-    "<C-x>": false,
-    "<C-a>": false,
-    "<C-z>": false,
-    "<C-y>": false,
     "<C-p>": false
   },
   "[dockercompose]": {
     "editor.insertSpaces": true,
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
     "editor.autoIndent": "advanced",
     "editor.quickSuggestions": {
       "other": true,
@@ -122,5 +246,10 @@
   },
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  },
+  "zig.zls.enabled": "on",
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false,
+  "editor.cursorSmoothCaretAnimation": "on"
 }
