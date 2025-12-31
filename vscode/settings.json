@@ -104,7 +104,7 @@
       "silent": true
     },
     {
-      "before": ["g", "d"],
+      "before": ["g", "i"],
       "commands": ["editor.action.goToImplementation"],
       "silent": true
     },
@@ -202,7 +202,7 @@
       "silent": true
     },
     {
-      "before": ["g", "d"],
+      "before": ["g", "i"],
       "commands": ["editor.action.goToImplementation"],
       "silent": true
     },
